@@ -1,0 +1,3 @@
+[submodule "modules/android-utils"]
+	path = modules/android-utils
+	url = https://github.com/Totomiz/android-utils.git
