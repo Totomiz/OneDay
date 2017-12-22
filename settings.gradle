@@ -1,1 +1,2 @@
-include ':app'
+rootProject.name = "哈哈哈"
+include ':app',':modules:android-utils'
