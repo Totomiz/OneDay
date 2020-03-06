@@ -60,6 +60,24 @@
                 <category android:name="com.zt.android.TEST_CODE" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.VpnStateViewActivity2"
+            android:label="VpnStateViewActivity2"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.zt.android.TEST_CODE" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.avi.SampleActivity"
+            android:label="avi.SampleActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.zt.android.TEST_CODE" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.avi.IndicatorActivity" />
     </application>
 
 </manifest>
