@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">OneDay</string>
+    <string name="speed_size_mb">%1$.2fMB</string>
+    <string name="speed_size_kb">%1$.2fKB</string>
 </resources>
