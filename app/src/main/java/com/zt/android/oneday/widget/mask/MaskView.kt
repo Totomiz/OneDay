@@ -15,12 +15,18 @@ class MaskView :View{
 
     val paint = Paint().apply {
         color = Color.parseColor("#25C0E9")
-        maskFilter = BlurMaskFilter(100f, BlurMaskFilter.Blur.SOLID)
+        maskFilter = BlurMaskFilter(40f, BlurMaskFilter.Blur.SOLID)
+    }
+
+    val paint2 = Paint().apply {
+        color = Color.parseColor("#25C0E9")
+        maskFilter = BlurMaskFilter(30f, BlurMaskFilter.Blur.INNER)
     }
     init {
         // 需禁用硬件加速
         setLayerType(LAYER_TYPE_SOFTWARE, null)
     }
+//    val gradient=LinearGradient(1,11,1,1)
 
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
@@ -30,6 +36,7 @@ class MaskView :View{
             save()
             translate(cr,cr)
             canvas.drawCircle(0f, 0f, dp2px(85f).toFloat(), paint)
+            canvas.drawCircle(0f, 0f, dp2px(85f).toFloat(), paint2)
 
         }
 

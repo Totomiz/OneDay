@@ -4,9 +4,10 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
     <android.support.v7.widget.AppCompatImageView
-        android:layout_width="218dp"
-        android:layout_height="218dp"
-        android:src="@drawable/copy"
+        android:id="@+id/iv_area"
+        android:layout_width="@dimen/conn_area_circle_wh"
+        android:layout_height="@dimen/conn_area_circle_wh"
+        android:src="@drawable/circle_connected1"
         app:layout_constrainedWidth="true"
         android:scaleType="fitCenter"
         app:layout_constrainedHeight="true"
@@ -15,10 +16,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
+    <com.zt.android.oneday.widget.mask.MaskView
+        android:id="@+id/mask_view"
+        android:layout_width="@dimen/conn_mask_view_wh"
+        android:layout_height="@dimen/conn_mask_view_wh"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
     <ImageButton
         android:id="@+id/iv_bg"
-        android:layout_width="124dp"
-        android:layout_height="124dp"
+        android:layout_width="@dimen/conn_center_circle_wh"
+        android:layout_height="@dimen/conn_center_circle_wh"
         android:background="@drawable/bg_conn_circle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

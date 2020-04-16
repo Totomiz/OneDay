@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="conn_center_circle_wh">124dp</dimen>
+    <dimen name="conn_area_circle_wh">240dp</dimen>
+    <dimen name="conn_mask_view_wh">200dp</dimen>
+</resources>

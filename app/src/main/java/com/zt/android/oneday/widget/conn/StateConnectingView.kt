@@ -4,6 +4,7 @@ import android.content.Context
 import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.Paint
+import android.graphics.drawable.AnimationDrawable
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.MotionEvent
@@ -28,6 +29,10 @@ class StateConnectingView : RelativeLayout {
         super.onFinishInflate()
         geo_view.indicator.mPaint.style=Paint.Style.FILL
         geo_view.setIndicatorColor(Color.parseColor("#4EC4E9"))
+        iv_area.setImageResource(R.drawable.connecting_animation_list)
+        iv_area.drawable?.apply {
+            (this as AnimationDrawable).start()
+        }
     }
 
 

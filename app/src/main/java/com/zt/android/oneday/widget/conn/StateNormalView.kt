@@ -57,7 +57,7 @@ class StateNormalView : RelativeLayout {
     override fun onLayout(changed: Boolean, l: Int, t: Int, r: Int, b: Int) {
         super.onLayout(changed, l, t, r, b)
         DebugLog.d(TAG, changed, l, t, r, b)
-        waveStyle.onLayout(changed, l, t, r, b, iv_bg)
+        waveStyle.onLayout(changed, l, t, r, b, iv_area)
     }
 
 

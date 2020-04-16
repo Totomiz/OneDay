@@ -50,7 +50,7 @@ class DefaultCircleWaveStylt(private val viewGroup: StateNormalView) : IWaveStyl
     private val DOUBLE_RATE = floatArrayOf(1.0f, 1.05f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.05f, 1.0f)
     private val ONE_RATE = floatArrayOf(1.0f, 1.05f, 1.0f)
     private val NONE_RATE = floatArrayOf(1.0f, 1f, 1.0f)
-    var isMute = false
+    var isMute = true
     var waveRangWith = dp2px(20f)
 
 
@@ -103,8 +103,8 @@ class DefaultCircleWaveStylt(private val viewGroup: StateNormalView) : IWaveStyl
     override fun onLayout(changed: Boolean, l: Int, t: Int, r: Int, b: Int, childView: View) {
         super.onLayout(changed, l, t, r, b, childView)
         if (changed) {
-            mMinRadius = childView.width / 2f
-            mMaxRadius = childView.width / 2f + waveRangWith
+            mMinRadius = childView.width / 2f-waveRangWith
+            mMaxRadius = childView.width / 2f
             startHeartAnim(childView, false)
         }
     }
