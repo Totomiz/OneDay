@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * Created on 2018/1/17.
- * Email: tonyzhang@tcl.com
+ *
  *
  * @author Tony zhang
  */

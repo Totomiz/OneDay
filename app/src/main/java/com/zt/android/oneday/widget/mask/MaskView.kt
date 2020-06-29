@@ -28,6 +28,11 @@ class MaskView :View{
     }
 //    val gradient=LinearGradient(1,11,1,1)
 
+
+    override fun draw(canvas: Canvas?) {
+        super.draw(canvas)
+    }
+
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
         val cr=width/2f
