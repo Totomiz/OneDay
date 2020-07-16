@@ -2,4 +2,7 @@
     <string name="app_name">OneDay</string>
     <string name="speed_size_mb">%1$.2fMB</string>
     <string name="speed_size_kb">%1$.2fKB</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

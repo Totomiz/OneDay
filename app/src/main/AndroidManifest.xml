@@ -2,10 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.zt.android.oneday">
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
     <application
         android:name=".OneDayApp"
         android:allowBackup="false"
@@ -15,7 +17,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".activity.FullscreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_fullscreen"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="com.zt.android.TEST_CODE" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".activity.AnimationItemActivity"
             android:label="Animation item">
@@ -25,8 +37,6 @@
                 <category android:name="com.zt.android.TEST_CODE" />
             </intent-filter>
         </activity>
-
-
         <activity android:name=".OneDay">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -52,7 +62,8 @@
                 <category android:name="com.zt.android.TEST_CODE" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.VpnStateViewActivity"
+        <activity
+            android:name=".activity.VpnStateViewActivity"
             android:label="VpnStateViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -60,7 +71,8 @@
                 <category android:name="com.zt.android.TEST_CODE" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.VpnStateViewActivity2"
+        <activity
+            android:name=".activity.VpnStateViewActivity2"
             android:label="VpnStateViewActivity2"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
@@ -69,7 +81,8 @@
                 <category android:name="com.zt.android.TEST_CODE" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.avi.SampleActivity"
+        <activity
+            android:name=".activity.avi.SampleActivity"
             android:label="avi.SampleActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -78,6 +91,15 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.avi.IndicatorActivity" />
+        <activity
+            android:name=".activity.testtouch.TestTouchActivity"
+            android:label="TestTouch.TestTouchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.zt.android.TEST_CODE" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
