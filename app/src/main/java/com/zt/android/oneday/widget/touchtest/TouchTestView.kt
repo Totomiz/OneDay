@@ -8,6 +8,7 @@ import android.util.AttributeSet
 import android.util.Log
 import android.view.MotionEvent
 import android.view.View
+import com.zt.android.utils.log.DebugLog
 
 const val TAG_PRE = "Touch_test"
 
@@ -25,16 +26,16 @@ class TouchTestView @JvmOverloads constructor(
     }
 
     override fun dispatchTouchEvent(event: MotionEvent?): Boolean {
-        Log.d(TAG, "dispatchTouchEvent() called with: event = $event")
+        DebugLog.d(TAG, "dispatchTouchEvent() called with: event = $event")
         val superValue = super.dispatchTouchEvent(event)
         Log.d(TAG, "dispatchTouchEvent() called with:super.dispatchTouchEvent(event)=$superValue event = $event ")
         return superValue
     }
 
     override fun onTouchEvent(event: MotionEvent?): Boolean {
-        Log.d(TAG, "onTouchEvent() called with: event = $event")
+        DebugLog.d(TAG, "onTouchEvent() called with: event = $event")
         val value = super.onTouchEvent(event)
-        Log.d(TAG, "onTouchEvent() called with:super.onTouchEvent(event)=$value event = $event ")
+        DebugLog.d(TAG, "onTouchEvent() called with:super.onTouchEvent(event)=$value event = $event ")
         return value
     }
 
